@@ -1,0 +1,131 @@
+{
+    "profile": "data-package",
+    "name": "metals-prospective-scenarios",
+    "title": "title",
+    "description": "description",
+    "source":"source",
+    "version": "0.0.1",
+    "contributors":[
+        {
+        "title": "Marguerite Fauroux",
+        "email": "margueritefauroux@gmail.com"
+    }
+    ],
+    "dependencies": {
+        "premise": ">=1.7.3"
+    },
+    "ecoinvent": {
+        "version": "3.8",
+        "system model": "cut-off"
+    },
+    "scenarios": {
+        "NZE": [
+            {
+                "model": "remind",
+                "pathway": "SSP2-PkBudg500"
+            }
+        ],
+        "SPS": [
+            {
+                "model": "remind",
+                "pathway": "SSP2-NPi"
+            }
+        ]
+    },
+
+    "licenses": [{
+    "id": "CC0-1.0",
+    "title": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }],
+    "resources": [
+        {
+            "path": "scenario_data/scenario_data.csv",
+            "profile": "tabular-data-resource",
+            "name": "scenario_data",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8-sig",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "model",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "pathway",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "scenario",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "region",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "variables",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "unit",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2022",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2025",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2030",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2035",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2040",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2045",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2050",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "configuration_file/config.yaml",
+            "profile": "data-resource",
+            "name": "config",
+            "format": "yaml",
+            "mediatype": "text/yaml",
+            "encoding": "utf-8"
+        }
+    ]
+}

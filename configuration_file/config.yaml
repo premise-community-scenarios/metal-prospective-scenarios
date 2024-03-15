@@ -1,0 +1,303 @@
+production pathways:
+  
+  # aluminium
+  primary aluminium:
+    production volume:
+      variable: Production|Alu|Primary
+    ecoinvent alias:
+      name: aluminium production, primary, ingot
+      reference product: aluminium, primary, ingot
+      exists in original database: True
+      regionalize: True
+  
+  secondary aluminium old:
+    production volume:
+      variable: Production|Alu|Secondary Old
+    ecoinvent alias:
+      name: treatment of aluminium scrap, post-consumer, prepared for recycling, at remelter
+      reference product: aluminium, wrought alloy
+      exists in original database: True
+      regionalize: True
+
+  secondary aluminium new:
+    production volume:
+      variable: Production|Alu|Secondary New
+    ecoinvent alias:
+      name: treatment of aluminium scrap, new, at remelter
+      reference product: aluminium, wrought alloy
+      exists in original database: True
+      regionalize: True
+
+  electricity hydro:
+    production volume:
+      variable: Electricity|Alu|Hydro
+    ecoinvent alias:
+      name: electricity production, hydro, aluminium industry
+      reference product: electricity, high voltage, aluminium industry
+      exists in original database: True
+      regionalize: True
+
+  electricity coal:
+    production volume:
+      variable: Electricity|Alu|Coal
+    ecoinvent alias:
+      name: electricity production, coal, aluminium industry
+      reference product: electricity, high voltage, aluminium industry
+      exists in original database: True
+      regionalize: True
+
+  electricity natural gas:
+    production volume: 
+      variable: Electricity|Alu|Natural Gas
+    ecoinvent alias: 
+      name: heat and power co-generation, natural gas, conventional power plant, 100MW electrical
+      reference product: electricity, high voltage
+      exists in original database: True
+      regionalize: True
+
+  electricity nuclear:
+    production volume: 
+      variable: Electricity|Alu|Nuclear
+    ecoinvent alias: 
+      name: electricity production, nuclear, pressure water reactor
+      reference product: electricity, high voltage
+      exists in original database: True
+      regionalize: True
+
+  electricity wind:
+    production volume: 
+      variable: Electricity|Alu|Wind
+    ecoinvent alias: 
+      name: electricity production, wind, 1-3MW turbine, onshore
+      reference product: electricity, high voltage
+      exists in original database: True
+      regionalize: True
+
+  electricity solar:
+    production volume: 
+      variable: Electricity|Alu|Solar
+    ecoinvent alias: 
+      name: electricity production, photovoltaic, commercial
+      reference product: electricity, low voltage
+      exists in original database: True
+      regionalize: True
+
+  electricity hydrogen:
+    production volume: 
+      variable: Electricity|Alu|Hydrogen
+    ecoinvent alias: 
+      name: electricity production, from hydrogen-fired one gigawatt gas turbine
+      reference product: electricity, high voltage
+      exists in original database: True
+      regionalize: True
+
+  smelting:
+    production volume:
+      variable: Production|Aluminium|Liquid
+    ecoinvent alias:
+      name: aluminium production, primary, liquid, prebake
+      reference product: aluminium, primary, liquid
+      exists in original database: True
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Smelting
+        reference year: 2022
+        includes:
+          technosphere:
+            - electricity
+  
+  # copper
+  electrorefining:
+    production volume:
+      variable: Production|Copper|Electrorefining
+    ecoinvent alias:
+      name: electrorefining of copper, anode
+      reference product: copper, cathode
+      exists in original database: True
+      regionalize: True
+
+  electrowinning:
+    production volume:
+      variable: Production|Copper|Leaching
+    ecoinvent alias:
+      name: copper production, cathode, solvent extraction and electrowinning process
+      reference product: copper, cathode
+      exists in original database: True
+      regionalize: True
+
+  secondary copper:
+    production volume: 
+      variable: Production|Copper|Secondary
+    ecoinvent alias: 
+      name: treatment of copper scrap by electrolytic refining
+      reference product: copper, cathode
+      exists in original database: True
+      regionalize: True
+
+  #nickel
+  processing of nickel rich materials:
+    production volume:  
+      variable: Production|Nickel|Materials
+    ecoinvent alias:
+      name: processing of nickel-rich materials
+      reference product: nickel, class 1
+      exists in original database: True
+      regionalize: False
+  
+  nickel from pgm:
+    production volume:  
+      variable: Production|Nickel|PGM
+    ecoinvent alias:
+      name: platinum group metal mine operation, ore with high palladium content
+      reference product: nickel, class 1
+      exists in original database: True
+      regionalize: False
+
+  smelting, 16% Ni:
+    production volume:  
+      variable: Production|Nickel|Smelting16
+    ecoinvent alias:
+      name: smelting and refining of nickel concentrate, 16% Ni
+      reference product: nickel, class 1
+      exists in original database: True
+      regionalize: False
+
+  smelting, 7% Ni:
+    production volume:  
+      variable: Production|Nickel|Smelting7
+    ecoinvent alias:
+      name: smelting and refining of nickel concentrate, 7% Ni
+      reference product: nickel, class 1
+      exists in original database: True
+      regionalize: False
+
+  nickel from cobalt:
+    production volume:  
+      variable: Production|Nickel|Cobalt
+    ecoinvent alias:
+      name: cobalt production
+      reference product: nickel, class 1
+      exists in original database: True
+      regionalize: False
+
+  secondary nickel:
+    production volume:  
+      variable: Production|Nickel|Secondary
+    ecoinvent alias:
+      name: treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining
+      reference product: nickel, class 1
+      exists in original database: True
+      regionalize: False
+
+  #cobalt
+  primary cobalt:
+    production volume:
+      variable: Production|Cobalt|Primary
+    ecoinvent alias: 
+      name: cobalt sulfate production, from copper mining, economic allocation
+      reference product: cobalt sulfate
+      exists in original database: True
+      regionalize: False
+
+  secondary cobalt:
+    production volume:
+      variable: Production|Cobalt|Secondary
+    ecoinvent alias: 
+      name: treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining
+      reference product: cobalt sulfate
+      exists in original database: True
+      regionalize: False
+
+  #lithium
+  primary lithium:
+    production volume: 
+      variable: Production|Lithium|Primary
+    ecoinvent alias: 
+      name: market for lithium carbonate, battery grade
+      reference product: lithium carbonate, battery grade
+      exists in original database: True
+      regionalize: False
+  
+  secondary lithium:
+    production volume: 
+      variable: Production|Lithium|Secondary
+    ecoinvent alias: 
+      name: treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining
+      reference product: lithium carbonate, battery grade
+      exists in original database: True
+      regionalize: False
+
+
+markets:
+
+  - name: market for aluminium, wrought alloy (SM)
+    reference product: aluminium, wrought alloy
+    unit: kilogram
+    includes:
+      - primary aluminium
+      - secondary aluminium old
+      - secondary aluminium new
+    replaces:
+      - name: market for aluminium, wrought alloy
+        product: aluminium, wrought alloy
+  
+  - name: market for electricity, high voltage, aluminium industry (SM)
+    reference product: electricity, high voltage, aluminium industry
+    unit: kilowatt hour
+    includes:
+      - electricity hydro
+      - electricity coal
+      - electricity natural gas
+      - electricity nuclear
+      - electricity wind
+      - electricity solar
+    replaces:
+      - name: market for electricity, high voltage, aluminium industry
+        product: electricity, high voltage, aluminium industry
+    replaces in:
+      - location: CN
+
+  - name: market for copper, cathode (SM)
+    reference product: copper, cathode
+    unit: kilogram
+    includes:
+      - electrorefining
+      - electrowinning
+      - secondary copper
+    replaces:
+      - name: market for copper, cathode
+        product: copper, cathode
+
+  - name: market for nickel, class 1 (SM)
+    reference product: nickel, class 1
+    unit: kilogram
+    includes:
+      - processing of nickel rich materials
+      - nickel from pgm
+      - smelting, 16% Ni
+      - smelting, 7% Ni
+      - nickel from cobalt
+      - secondary nickel
+    replaces:
+      - name: market for nickel, class 1
+        product: nickel, class 1
+
+  - name: market for cobalt sulfate (SM)
+    reference product: cobalt sulfate
+    unit: kilogram
+    includes:
+      - primary cobalt
+      - secondary cobalt
+    replaces:
+      - name: market for cobalt sulfate
+        product: cobalt sulfate
+
+  - name: market for lithium carbonate, battery grade (SM)
+    reference product: lithium carbonate, battery grade
+    unit: kilogram
+    includes:
+      - primary lithium
+      - secondary lithium
+    replaces:
+      - name: market for lithium carbonate
+        product: lithium carbonate
