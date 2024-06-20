@@ -203,8 +203,8 @@ production pathways:
     production volume:
       variable: Production|Cobalt|Secondary
     ecoinvent alias: 
-      name: treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining
-      reference product: cobalt sulfate
+      name: treatment of used Li-ion battery, pyrometallurgical treatment
+      reference product: cobalt
       exists in original database: True
       regionalize: False
 
@@ -222,8 +222,8 @@ production pathways:
     production volume: 
       variable: Production|Lithium|Secondary
     ecoinvent alias: 
-      name: treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining
-      reference product: lithium carbonate, battery grade
+      name: treatment of used Li-ion battery, hydrometallurgical treatment
+      reference product: lithium carbonate
       exists in original database: True
       regionalize: False
 

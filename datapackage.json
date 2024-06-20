@@ -12,27 +12,16 @@
     }
     ],
     "dependencies": {
-        "premise": ">=1.7.3"
+        "premise": ">=2.1.1"
     },
     "ecoinvent": {
-        "version": "3.8",
+        "version": "3.10",
         "system model": "cut-off"
     },
-    "scenarios": {
-        "NZE": [
-            {
-                "model": "remind",
-                "pathway": "SSP2-PkBudg500"
-            }
-        ],
-        "SPS": [
-            {
-                "model": "remind",
-                "pathway": "SSP2-NPi"
-            }
-        ]
-    },
-
+    "scenarios": [
+        "NZE",
+        "SPS"
+    ],
     "licenses": [{
     "id": "CC0-1.0",
     "title": "CC0 1.0",
@@ -48,16 +37,6 @@
             "encoding": "utf-8-sig",
             "schema": {
                 "fields": [
-                    {
-                        "name": "model",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "pathway",
-                        "type": "string",
-                        "format": "default"
-                    },
                     {
                         "name": "scenario",
                         "type": "string",
